@@ -70,10 +70,7 @@ const intCode = input => {
   return newInput
 }
 
-let instructions = fs.readFileSync('input.txt').toString().split(',');
-instructions = instructions.map(Number);
-
-const findNounAndVerb = (instructions) => {  
+const findNounAndVerb = (instructions) => {
   for (let i = 0; i < 100; i++) {
     for (let j = 0; j < 100; j++) {
       const attempt = [...instructions]
@@ -88,7 +85,10 @@ const findNounAndVerb = (instructions) => {
   }
 }
 
-findNounAndVerb(instructions)
+// let instructions = fs.readFileSync('input.txt').toString().split(',');
+// instructions = instructions.map(Number);
+
+// findNounAndVerb(instructions)
 
 module.exports = {
   intCode,

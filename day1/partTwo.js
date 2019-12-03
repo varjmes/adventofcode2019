@@ -44,7 +44,7 @@ const calculateFuel = modules => {
   }, 0)
 }
 
-const modules = fs.readFileSync('input.txt').toString().split('\n');
-calculateFuel(modules)
+// const modules = fs.readFileSync('input.txt').toString().split('\n');
+// calculateFuel(modules)
 
 module.exports = calculateFuel;

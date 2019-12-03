@@ -21,7 +21,7 @@
 const fs = require('fs')
 
 const calculateFuelForModule = mod => {
-   return Math.floor(mod / 3) - 2
+  return Math.floor(mod / 3) - 2
 }
 
 const calculateFuel = modules => {
@@ -30,7 +30,7 @@ const calculateFuel = modules => {
   }, 0)
 }
 
-const modules = fs.readFileSync('input.txt').toString().split('\n');
-calculateFuel(modules)
+// const modules = fs.readFileSync('input.txt').toString().split('\n');
+// calculateFuel(modules)
 
 module.exports = calculateFuel;

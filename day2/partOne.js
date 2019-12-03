@@ -105,13 +105,13 @@ const intCode = input => {
   return newInput
 }
 
-let instructions = fs.readFileSync('input.txt').toString().split(',');
-instructions = instructions.map(Number);
+// let instructions = fs.readFileSync('input.txt').toString().split(',');
+// instructions = instructions.map(Number);
 
-instructions[1] = 12
-instructions[2] = 2
+// instructions[1] = 12
+// instructions[2] = 2
 
-intCode(instructions)
+// intCode(instructions)
 
 module.exports = {
   intCode,
